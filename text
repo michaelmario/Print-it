@@ -1,0 +1,12 @@
+<h1>
+		<img class="logo" src="./assets/images/logo.png" alt="Print it ! Impressions d'entreprises" >
+	</h1>
+	<a class="btn devis" href="mailto:contact@print-it.tld">Devis</a>
+
+    <div id="banner">
+		<img class="banner-img" src="./assets/images/slideshow/slide1.jpg" alt="Banner Print-it">
+		<p>Impressions tous formats <span>en boutique et en ligne</span></p>
+		<div class="dots">
+		</div>
+	</div>
+    <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>

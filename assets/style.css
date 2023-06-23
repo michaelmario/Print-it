@@ -104,7 +104,7 @@ header {
 	background-color: var(--secondary-color);
 }
 
-#banner {
+/*#banner {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -120,9 +120,9 @@ header {
 	z-index: -1;
 	object-fit: cover;
 	object-position: center;
-}
+}*/
 /* Code CSS en prévision de l'ajout d'un carousel pour la bannière */
-/* Gestion des fleches du carrousel */
+/* Gestion des fleches du carrousel 
 #banner .arrow {
 	position: absolute;
 }
@@ -131,8 +131,8 @@ header {
 }
 #banner .arrow_right {
 	right: 10px;
-}
-/* Gestion des points du carrousel */
+}*/
+/* Gestion des points du carrousel 
 .dots {
 	position: absolute;
 	bottom: 40px;
@@ -149,7 +149,7 @@ header {
 }
 .dot_selected {
 	background-color: #fff;
-}
+}*/
 /* Fin du code CSS pour le carousel */
 #banner p {
 	font-family: 'Roboto Slab', sans-serif;
@@ -290,8 +290,131 @@ footer div {
 
 }
 
+body::-webkit-scrollbar { display: none; }
+
+@media all and (max-width: 768px) {
+ .tagline{
+	font-size:20px !important;
+	top: -201px !important;
+ }
+ #right-arrow > img{
+	width:67% !important;
+  }
+  #left-arrow > img{
+	width:67% !important;
+  }
+  .controls {
+     top: 27% !important;
+  }
+  #dots-con {
+    left: 39% !important;
+   
+  }
+}
 @media all and (max-width: 1250px) {
 	#contact > article {
 		flex: 2;
 	}
 }
+/*Slider */
+#slider{
+	width:100%;
+	margin:0 auto;
+	position:relative;
+	overflow:hidden;
+	
+  }
+  .slide{
+	width:100%;
+	position:relative;
+	display:none;
+	animation-name:fade;
+	animation-duration:1s;
+	
+  }
+  img{
+   width:100%; 
+  }
+
+  @keyframes fade{
+	from{opacity:0.5;}
+	to{opacity:1;}
+  }
+  
+  .controls{
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	font-size:1.5em;
+	padding:15px 10px;
+	border-radius:5px;
+	z-index:5;
+	
+  }
+  
+  .controls:hover{
+	background:white;
+	transition:0.3s;
+  }
+  
+  .controls:active{
+	color:grey;
+  }
+  
+  #left-arrow{
+	left:10px;
+  }
+  
+  #right-arrow{
+	right:10px;	
+  }
+  #right-arrow > img{
+	width:20%;
+  }
+  
+  
+  #dots-con{
+	text-align:center;
+	position: relative;
+	left:48%;
+    top: -106px;
+    z-index: 5;
+	background-color: #3f414272;
+	width: 150px;
+  }
+  .dot{
+	display:inline-block;
+	background:grey;
+	padding:8px;
+	border-radius:50%;
+	margin:10px 5px;
+	cursor: pointer;
+  }
+  
+  .active{
+	background:crimson;
+  }
+  .tagline{
+	font-family: 'Roboto Slab', sans-serif;
+	font-weight: 900;
+	font-size: 40px;
+	line-height: 66px;
+	color: white;
+	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+	text-align: center;
+	position:relative;
+	top:-250px;
+}
+  @media (max-width:576px){
+	#slider{width:100%;
+	
+	}
+	
+	.controls{
+	  font-size:1em;
+	}
+	
+	#dots-con{
+	  display:none;
+	}
+  }
