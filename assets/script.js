@@ -31,7 +31,7 @@ slides.forEach((slideoBj)=>{
 	paragrapth.innerHTML = slideoBj.tagLine;
      slide.className ="slide";
 	var img = document.createElement('img');
-	img.src="/assets/images/slideshow/" +slideoBj.image;
+	img.src="https://michaelmario.github.io/Print-it/assets/images/slideshow/" +slideoBj.image;
 	img.alt= slideoBj.tagLine;
 	slide.append(img);
 	dotsCon.appendChild(span);
