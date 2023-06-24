@@ -23,7 +23,7 @@ var index = 0;
 
 
 slides.forEach((slideoBj)=>{
-	 var span = document.createElement('span');
+	var span = document.createElement('span');
 	 span.className ="dot";
 	var slide = document.createElement('div');
 	var paragrapth = document.createElement('p');
@@ -42,13 +42,13 @@ slides.forEach((slideoBj)=>{
 });
 var dots = document.querySelectorAll(".dot");
 function prevSlide(n){
-  index+=n;
+  index +=n;
   console.log("prevSlide is called");
   changeSlide();
 }
 
 function nextSlide(n){
-  index+=n;
+  index +=n;
   changeSlide();
 }
 
@@ -57,12 +57,10 @@ changeSlide();
 function changeSlide(){
   var slideArray = document.querySelectorAll('.slide');
   if(index>slideArray.length-1)
-    index=0;
+    index = 0;
   
   if(index<0)
-    index=slideArray.length-1;
-  
-  
+    index=slideArray.length-1;  
   
     for(let i=0;i<slideArray.length;i++){
        
@@ -79,10 +77,9 @@ function changeSlide(){
   
 
 }
-
+let imgSlide = document.querySelectorAll('.slide');
 dots.forEach((evet)=>{
-	evet.addEventListener('click',function (e) {
-		let imgSlide = document.querySelectorAll('.slide');
+	evet.addEventListener('click',function (e) {		
 		let item = Array.prototype.indexOf.call(
 			e.target.parentNode.children,
 			e.target

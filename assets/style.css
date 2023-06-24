@@ -291,8 +291,122 @@ footer div {
 }
 
 body::-webkit-scrollbar { display: none; }
+@media(width:320px){
+	.tagline{
+		font-size:22px !important;
+	}
+	#about-us{
+		margin-top:-250px;
+	}
+	#about-us li{
+		width:100%;
+	}
+	#products{
+		flex-direction:column !important;
+	}
+	#products div{
+		padding:0rem !important;
+	}
+	#question{
+	 padding:0rem !important;	
+	}
+	#question h2 {
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	#question p{
+		text-align: center;
+	}
+	#why-us >div{
+		flex-direction:column;
+	}
+	#why-us article {
+		max-width: 100% !important;
+	}
+	#contact{
+		display:flex;
+		flex-direction: column;
+	}
+	#contact > .container{
+		flex-direction:column;
+		padding:0.5rem;
+	}
+	#contact .container > div > div {
+		flex-direction: column;
+		padding-bottom: 20px;
+	}
+	footer{
+		flex-direction:column;
+	}
+	footer>div{
+		margin-bottom:25px;
+	}
+}
+@media(max-width:425px) {
+	header{
+		flex-direction:column;	
+		margin-bottom:30px;
+	}
+	.tagline{
+		font-size:20px !important;
+		top: -190px !important;
+	 }
+	 .controls{
+		top:36% !important;
+	 }
+	 .slide >img{
+		height:213px;
 
-@media all and (max-width: 768px) {
+	 }
+	 #about-us{
+		margin-top:-151px;
+	}
+	#about-us li{
+		width:100%;
+	}
+	#products{
+		flex-direction:column !important;
+	}
+	#products div{
+		padding:0rem !important;
+	}
+	#question{
+	 padding:0rem !important;	
+	}
+	#question h2 {
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	#question p{
+		text-align: center;
+	}
+	#why-us >div{
+		flex-direction:column;
+	}
+	#why-us article {
+		max-width: 100% !important;
+	}
+	#contact{
+		display:flex;
+		flex-direction: column;
+	}
+	#contact > .container{
+		flex-direction:column;
+		padding:0.5rem;
+	}
+	#contact .container > div > div {
+		flex-direction: column;
+		padding-bottom: 20px;
+	}
+	footer{
+		flex-direction:column;
+	}
+	footer>div{
+		margin-bottom:25px;
+	}
+	
+}
+@media(width: 768px) {
  .tagline{
 	font-size:20px !important;
 	top: -201px !important;
@@ -310,6 +424,19 @@ body::-webkit-scrollbar { display: none; }
     left: 39% !important;
    
   }
+  #contact .container {
+    flex-direction: column;
+    display: flex;
+    /* padding: 6em; */
+}
+}
+@media(width:1024px){
+	.tagline{
+		font-size:26px !important;
+	  }
+	  .controls{
+		top:31% !important;
+	  }
 }
 @media all and (max-width: 1250px) {
 	#contact > article {
@@ -368,9 +495,7 @@ body::-webkit-scrollbar { display: none; }
   #right-arrow{
 	right:10px;	
   }
-  #right-arrow > img{
-	width:20%;
-  }
+  
   
   
   #dots-con{
