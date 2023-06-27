@@ -1,19 +1,19 @@
 const slides = [
 	{
 		"image":"slide1.jpg",
-		"tagLine":"Impressions tous formats <span>en boutique et en ligne</span>"
+		"tagLine":"Impressions tous formats <br> <span class='small'>en boutique et en ligne</span>"
 	},
 	{
 		"image":"slide2.jpg",
-		"tagLine":"Tirages haute définition grand format <span>pour vos bureaux et events</span>"
+		"tagLine":"Tirages haute définition grand format <br><span class='small'>pour vos bureaux et events</span>"
 	},
 	{
 		"image":"slide3.jpg",
-		"tagLine":"Grand choix de couleurs <span>de CMJN aux pantones</span>"
+		"tagLine":"Grand choix de couleurs <br><span class='small'>de CMJN aux pantones</span>"
 	},
 	{
 		"image":"slide4.png",
-		"tagLine":"Autocollants <span>avec découpe laser sur mesure</span>"
+		"tagLine":"Autocollants <br><span class='small'> avec découpe laser sur mesure</span>"
 	}
 ];
 var slideContainerHtml = document.querySelector('.slideContainerHtml');
