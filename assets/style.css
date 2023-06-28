@@ -435,6 +435,7 @@ body::-webkit-scrollbar { display: none; }
   }
   .slide{
 	width:100%;
+	overflow:hidden;
 	position:relative;
 	display:none;
 	animation-name:fade;
@@ -458,6 +459,7 @@ body::-webkit-scrollbar { display: none; }
 	padding:15px 10px;
 	border-radius:5px;
 	z-index:5;
+	cursor:pointer;
 	
   }
   .controls:hover{
